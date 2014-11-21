@@ -28,4 +28,8 @@ Today we will be making a Tic Tac Toe game using all of this.
 
 
 
+## Resources
 
+* [DOM NOTES](https://github.com/sf-wdi-15/notes/tree/master/week_01_programming_fundamentals_with_the_web/day_4_dom/dusk_dom)
+* [DOM Practice](https://github.com/sf-wdi-15/js_dom)
+* [Calculator Practice](https://github.com/sf-wdi-15/calculatorLab)
