@@ -105,6 +105,7 @@ four.onclick = function(event) {
 		d = 0;
 		clickedFour = 1;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -152,7 +153,7 @@ seven.onclick = function(event) {
 		gameOver();
 	} else if ((turn === false) && (clickedSeven === undefined)){
 		input7.innerHTML = "O";
-		h = 0;
+		g = 0;
 		clickedSeven = 1;
 		displayTurn();
 		gameOver();
@@ -169,7 +170,7 @@ eight.onclick = function(event) {
 		gameOver();
 	} else if ((turn === false) && (clickedEight === undefined)) {
 		input8.innerHTML = "O";
-		h = 1;
+		h = 0;
 		clickedEight = 1;
 		displayTurn();
 		gameOver();
@@ -263,5 +264,4 @@ var gameOver = function () {
 	}
 };
 
-//} Game over while conditional closing
 };
