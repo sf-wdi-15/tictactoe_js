@@ -8,7 +8,6 @@ var g;
 var h;
 var i;
 var turn = Boolean(true); //True = X && False = O
-var gameNotOver;
 var clickedOne;
 var clickedTwo;
 var clickedThree;
@@ -43,20 +42,19 @@ var input9 = document.getElementById('div_9Input');
 var reset = document.getElementById('reset');
 var whoTurn = document.getElementById("whoTurn");
 
-//while (gameNotOver) {
 one.onclick = function(event) {
 	if ((turn === true) && (clickedOne === undefined)) {
 		input1.innerHTML = "X";
 		a = 1;
 		clickedOne = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedOne === undefined)) {
 		input1.innerHTML = "O";
 		a = 0;
 		clickedOne = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -64,16 +62,16 @@ one.onclick = function(event) {
 two.onclick = function(event) {
 	if ((turn === true) && (clickedTwo === undefined)){
 		input2.innerHTML = "X";
-		b = "1";
+		b = 1;
 		clickedTwo = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedTwo === undefined)) {
 		input2.innerHTML = "O";
-		b = "0";
+		b = 0;
 		clickedTwo = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");	
 	}
@@ -81,16 +79,16 @@ two.onclick = function(event) {
 three.onclick = function(event) {
 	if ((turn === true) && (clickedThree === undefined)) {
 		input3.innerHTML = "X";
-		c = "1";
+		c = 1;
 		clickedThree = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedThree === undefined)) {
 		input3.innerHTML = "O";
-		c = "0";
+		c = 0;
 		clickedThree = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -98,15 +96,14 @@ three.onclick = function(event) {
 four.onclick = function(event) {
 	if ((turn === true) && (clickedFour === undefined)) {
 		input4.innerHTML = "X";
-		d = "1";
+		d = 1;
 		clickedFour = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedFour === undefined)) {
 		input4.innerHTML = "O";
-		d = "0";
+		d = 0;
 		clickedFour = 1;
-		turn = !turn;
 		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
@@ -115,16 +112,16 @@ four.onclick = function(event) {
 five.onclick = function(event) {
 	if ((turn === true) && (clickedFive === undefined)) {
 		input5.innerHTML = "X";
-		e = "1";
+		e = 1;
 		clickedFive = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedFive === undefined)) {
 		input5.innerHTML = "O";
-		e = "0";
+		e = 0;
 		clickedFive = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -132,16 +129,16 @@ five.onclick = function(event) {
 six.onclick = function(event) {
 	if ((turn === true) && (clickedSix === undefined)) {
 		input6.innerHTML = "X";
-		f = "1";
+		f = 1;
 		clickedSix = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedSix === undefined)) {
 		input6.innerHTML = "O";
-		f = "0";
+		f = 0;
 		clickedSix = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -149,16 +146,16 @@ six.onclick = function(event) {
 seven.onclick = function(event) {
 	if ((turn === true) && (clickedSeven === undefined)) {
 		input7.innerHTML = "X";
-		g = "1";
+		g = 1;
 		clickedSeven = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedSeven === undefined)){
 		input7.innerHTML = "O";
-		h = "0";
+		h = 0;
 		clickedSeven = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -166,16 +163,16 @@ seven.onclick = function(event) {
 eight.onclick = function(event) {
 	if ((turn === true) && (clickedEight === undefined)) {
 		input8.innerHTML = "X";
-		h = "1";
+		h = 1;
 		clickedEight = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedEight === undefined)) {
 		input8.innerHTML = "O";
-		h = "1";
+		h = 1;
 		clickedEight = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -183,16 +180,16 @@ eight.onclick = function(event) {
 nine.onclick = function(event) {
 	if ((turn === true) && (clickedNine === undefined)) {
 		input9.innerHTML = "X";
-		i = "1";
+		i = 1;
 		clickedNine = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else if ((turn === false) && (clickedNine === undefined)) {
 		input9.innerHTML = "O";
-		i = "0";
+		i = 0;
 		clickedNine = 1;
-		turn = !turn;
 		displayTurn();
+		gameOver();
 	} else {
 		alert("That square has already been selected. Please select an empty square");		
 	}
@@ -203,47 +200,68 @@ nine.onclick = function(event) {
 }
 
 var displayTurn = function () {
+	turn = !turn;
 	if (turn === true) {
 		whoTurn.innerHTML = "Player 1, it's your turn"; 
 	} else {
 		whoTurn.innerHTML = "Player 2, it's your turn";
 	}
-};
+	};
 
 // Conditional to check if game is over
-if ((a === 1 && b === 1 && c ===1) || (a === 0 && b === 0 &&  c === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if ((d === 1 && e === 1 && f === 1) || (d === 0 && e === 0 && f === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if ((g === 1 && h === 1 && i === 1) || (g === 0 && h === 0 && i === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if ((a === 1 && d === 1 && g === 1) || (a === 0 && d === 0 && g === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if ((b === 1 && e === 1 && h === 1) || (b === 0 && e === 0 && h === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if ((c === 1 && f === 1 && i === 1) || (c === 0 && f === 0 && i === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if ((a === 1 && e === 1 && i === 1) || (a === 0 && e === 0 && i === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if ((c === 1 && e === 1 && g === 1) || (c === 0 && e === 0 && g === 0)) {
-	gameNotOver = false;
-	alert("Game Over!");
-} else if (a != undefined && b != undefined && c != undefined && d != undefined && e != undefined && f != undefined && g != undefined && h != undefined && i != undefined) {
-	gameNotOver = false;
-	alert("Game Over!");
-}
+var gameOver = function () {
+	if ((a === 1 && b === 1 && c ===1) || (a === 0 && b === 0 &&  c === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((d === 1 && e === 1 && f === 1) || (d === 0 && e === 0 && f === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((g === 1 && h === 1 && i === 1) || (g === 0 && h === 0 && i === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((a === 1 && d === 1 && g === 1) || (a === 0 && d === 0 && g === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((b === 1 && e === 1 && h === 1) || (b === 0 && e === 0 && h === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((c === 1 && f === 1 && i === 1) || (c === 0 && f === 0 && i === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((a === 1 && e === 1 && i === 1) || (a === 0 && e === 0 && i === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((c === 1 && e === 1 && g === 1) || (c === 0 && e === 0 && g === 0)) {
+		if (turn === false) {
+			alert("Player 1 - YOU WIN!")
+		} else {
+			alert("Player 2 - YOU WIN!")
+		}
+	} else if ((a != undefined) && (b != undefined) && (c != undefined) && (d != undefined) && (e != undefined) && (f != undefined) && (g != undefined) && (h != undefined) && (i != undefined)) {
+			alert("This game is a tie. Click \"Start Over\" to start a new game")
+	}
+};
 
-
-
-//alert("Game Over!")
 //} Game over while conditional closing
-
-
 };
