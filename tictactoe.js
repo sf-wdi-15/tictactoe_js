@@ -213,54 +213,71 @@ var displayTurn = function () {
 var gameOver = function () {
 	if ((a === 1 && b === 1 && c ===1) || (a === 0 && b === 0 &&  c === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((d === 1 && e === 1 && f === 1) || (d === 0 && e === 0 && f === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((g === 1 && h === 1 && i === 1) || (g === 0 && h === 0 && i === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((a === 1 && d === 1 && g === 1) || (a === 0 && d === 0 && g === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((b === 1 && e === 1 && h === 1) || (b === 0 && e === 0 && h === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((c === 1 && f === 1 && i === 1) || (c === 0 && f === 0 && i === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((a === 1 && e === 1 && i === 1) || (a === 0 && e === 0 && i === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((c === 1 && e === 1 && g === 1) || (c === 0 && e === 0 && g === 0)) {
 		if (turn === false) {
-			alert("Player 1 - YOU WIN!")
+			alert("Player 1 - YOU WIN!");
+			location.reload();
 		} else {
-			alert("Player 2 - YOU WIN!")
+			alert("Player 2 - YOU WIN!");
+			location.reload();
 		}
 	} else if ((a != undefined) && (b != undefined) && (c != undefined) && (d != undefined) && (e != undefined) && (f != undefined) && (g != undefined) && (h != undefined) && (i != undefined)) {
-			alert("This game is a tie. Click \"Start Over\" to start a new game")
+			alert("This game is a tie.");
+			location.reload();
 	}
 };
 
