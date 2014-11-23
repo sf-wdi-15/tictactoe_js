@@ -8,16 +8,16 @@ var g;
 var h;
 var i;
 var turn = Boolean(true); //True = X && False = O
-var gameNotOver = true;
-var clickedOne = Boolean(false);
-var clickedTwo = Boolean(false);
-var clickedThree = Boolean(false);
-var clickedFour = Boolean(false);
-var clickedFive = Boolean(false);
-var clickedSix = Boolean(false);
-var clickedSeven = Boolean(false);
-var clickedEight = Boolean(false);
-var clickedNine = Boolean(false);
+var gameNotOver;
+var clickedOne;
+var clickedTwo;
+var clickedThree;
+var clickedFour;
+var clickedFive;
+var clickedSix;
+var clickedSeven;
+var clickedEight;
+var clickedNine;
 
 window.onload = function(){    
 	//alert("loaded!");
@@ -44,94 +44,139 @@ var reset = document.getElementById('reset');
 
 //while (gameNotOver) {
 one.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedOne === undefined)) {
 		input1.innerHTML = "X";
-		a = "1";
-	} else {
+		a = 1;
+		clickedOne = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedOne === undefined)) {
 		input1.innerHTML = "O";
 		a = 0;
+		clickedOne = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");
 	}
-	turn = !turn;
 };
 two.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedTwo === undefined)){
 		input2.innerHTML = "X";
 		b = "1";
-	} else {
+		clickedTwo = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedTwo === undefined)) {
 		input2.innerHTML = "O";
 		b = "0";
+		clickedTwo = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");	
 	}
-	turn = !turn;
-};
+}; 
 three.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedThree === undefined)) {
 		input3.innerHTML = "X";
 		c = "1";
-	} else {
+		clickedThree = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedThree === undefined)) {
 		input3.innerHTML = "O";
 		c = "0";
+		clickedThree = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");
 	}
-	turn = !turn
 };
 four.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedFour === undefined)) {
 		input4.innerHTML = "X";
 		d = "1";
-	} else {
+		clickedFour = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedFour === undefined)) {
 		input4.innerHTML = "O";
 		d = "0";
+		clickedFour = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");
 	}
-	turn = !turn
 };
 five.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedFive === undefined)) {
 		input5.innerHTML = "X";
 		e = "1";
-	} else {
+		clickedFive = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedFive === undefined)) {
 		input5.innerHTML = "O";
 		e = "0";
+		clickedFive = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");
 	}
-	turn = !turn
 };
 six.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedSix === undefined)) {
 		input6.innerHTML = "X";
 		f = "1";
-	} else {
+		clickedSix = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedSix === undefined)) {
 		input6.innerHTML = "O";
 		f = "0";
+		clickedSix = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");
 	}
-	turn = !turn
 };
 seven.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedSeven === undefined)) {
 		input7.innerHTML = "X";
 		g = "1";
-	} else {
+		clickedSeven = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedSeven === undefined)){
 		input7.innerHTML = "O";
 		h = "0";
+		clickedSeven = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");
 	}
-	turn = !turn
 };
 eight.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedEight === undefined)) {
 		input8.innerHTML = "X";
 		h = "1";
-	} else {
+		clickedEight = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedEight === undefined)) {
 		input8.innerHTML = "O";
 		h = "1";
+		clickedEight = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");
 	}
-	turn = !turn
 };
 nine.onclick = function(event) {
-	if (turn === true) {
+	if ((turn === true) && (clickedNine === undefined)) {
 		input9.innerHTML = "X";
 		i = "1";
-	} else {
+		clickedNine = 1;
+		turn = !turn;
+	} else if ((turn === false) && (clickedNine === undefined)) {
 		input9.innerHTML = "O";
 		i = "0";
+		clickedNine = 1;
+		turn = !turn;
+	} else {
+		alert("That square has already been selected. Please select an empty square");		
 	}
-	turn = !turn
 };
 
  reset.onclick = function (event) {
