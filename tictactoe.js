@@ -41,6 +41,7 @@ var input7 = document.getElementById('div_7Input');
 var input8 = document.getElementById('div_8Input');
 var input9 = document.getElementById('div_9Input');
 var reset = document.getElementById('reset');
+var whoTurn = document.getElementById("whoTurn");
 
 //while (gameNotOver) {
 one.onclick = function(event) {
@@ -49,11 +50,13 @@ one.onclick = function(event) {
 		a = 1;
 		clickedOne = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedOne === undefined)) {
 		input1.innerHTML = "O";
 		a = 0;
 		clickedOne = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -64,11 +67,13 @@ two.onclick = function(event) {
 		b = "1";
 		clickedTwo = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedTwo === undefined)) {
 		input2.innerHTML = "O";
 		b = "0";
 		clickedTwo = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");	
 	}
@@ -79,11 +84,13 @@ three.onclick = function(event) {
 		c = "1";
 		clickedThree = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedThree === undefined)) {
 		input3.innerHTML = "O";
 		c = "0";
 		clickedThree = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -94,11 +101,13 @@ four.onclick = function(event) {
 		d = "1";
 		clickedFour = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedFour === undefined)) {
 		input4.innerHTML = "O";
 		d = "0";
 		clickedFour = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -109,11 +118,13 @@ five.onclick = function(event) {
 		e = "1";
 		clickedFive = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedFive === undefined)) {
 		input5.innerHTML = "O";
 		e = "0";
 		clickedFive = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -124,11 +135,13 @@ six.onclick = function(event) {
 		f = "1";
 		clickedSix = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedSix === undefined)) {
 		input6.innerHTML = "O";
 		f = "0";
 		clickedSix = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -139,11 +152,13 @@ seven.onclick = function(event) {
 		g = "1";
 		clickedSeven = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedSeven === undefined)){
 		input7.innerHTML = "O";
 		h = "0";
 		clickedSeven = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -154,11 +169,13 @@ eight.onclick = function(event) {
 		h = "1";
 		clickedEight = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedEight === undefined)) {
 		input8.innerHTML = "O";
 		h = "1";
 		clickedEight = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");
 	}
@@ -169,11 +186,13 @@ nine.onclick = function(event) {
 		i = "1";
 		clickedNine = 1;
 		turn = !turn;
+		displayTurn();
 	} else if ((turn === false) && (clickedNine === undefined)) {
 		input9.innerHTML = "O";
 		i = "0";
 		clickedNine = 1;
 		turn = !turn;
+		displayTurn();
 	} else {
 		alert("That square has already been selected. Please select an empty square");		
 	}
@@ -182,6 +201,14 @@ nine.onclick = function(event) {
  reset.onclick = function (event) {
     location.reload();
 }
+
+var displayTurn = function () {
+	if (turn === true) {
+		whoTurn.innerHTML = "Player 1, it's your turn"; 
+	} else {
+		whoTurn.innerHTML = "Player 2, it's your turn";
+	}
+};
 
 // Conditional to check if game is over
 if ((a === 1 && b === 1 && c ===1) || (a === 0 && b === 0 &&  c === 0)) {
