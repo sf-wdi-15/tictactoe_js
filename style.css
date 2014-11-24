@@ -75,15 +75,15 @@ gamerGrid {
   background-size: 100% 100%;
 }
 .playerOne {
-  background-image: url("player1Avatar.png");
+  background-image: url("http://png-3.findicons.com/files/icons/175/halloween_avatar/300/mike.png");
 }
 
 .playerTwo{
-  background-image: url("player2Avatar.png");
+  background-image: url("http://png-1.findicons.com/files/icons/175/halloween_avatar/300/alien.png");
 }
 
 .arrow {
-  background-image: url("currentArrow.png");
+  background-image: url("https://cdn2.iconfinder.com/data/icons/snipicons/5000/circle-arrow-right-512.png");
 }
 .arrowLeft{
   transform:  scaleX(-1);
