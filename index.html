@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="tictactoe.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>TicTocToe JS</title>
+</head>
+
+
+<body onload="startGame();">
+  <h1>Let's Play Tic Tac Toe!</h1> 
+
+  <div id="message"></div>
+
+  <table class="center" border="1">
+    <tr>
+      <td id="s1" class="Square" onclick="nextMove(this);"></td>
+      <td id="s2" class="Square" onclick="nextMove(this);"></td>
+      <td id="s3" class="Square" onclick="nextMove(this);"></td>
+    </tr>
+
+    <tr>
+      <td id="s4" class="Square" onclick="nextMove(this);"></td>
+      <td id="s5" class="Square" onclick="nextMove(this);"></td>
+      <td id="s6" class="Square" onclick="nextMove(this);"></td>
+    </tr>
+
+    <tr>
+      <td id="s7" class="Square" onclick="nextMove(this);"></td>
+      <td id="s8" class="Square" onclick="nextMove(this);"></td>
+      <td id="s9" class="Square" onclick="nextMove(this);"></td>
+    </tr>
+
+  </table>
+  <div>
+  <a href="javascript:startGame();">Start Over</a>
+  </div>
+</body>
+
+</html>
