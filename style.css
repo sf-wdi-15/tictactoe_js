@@ -1,0 +1,30 @@
+body {
+	text-align:center;
+}
+
+
+#board {
+	height: 300px;
+	width: 300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.row {
+height: 50px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:auto;
+width:100%;
+}
+
+.box {
+	width:25%;
+	height:65%;
+	margin: 4px 0px 4px 7px;
+	text-align: center;
+	padding-top: 25px;
+	color: black;
+	float: left;
+	border: 2px solid black ;
+}
