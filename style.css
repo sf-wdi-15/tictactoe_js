@@ -1,0 +1,25 @@
+
+.Square {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 36pt;
+    font-weight: bold;
+    font-family: Arial;
+}
+ table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 10px;
+  }
+h1 {
+	text-align: center;
+}
+
+td {
+	background-color: #E0FFFF;
+}
+div {
+
+	 text-align: center;
+}
