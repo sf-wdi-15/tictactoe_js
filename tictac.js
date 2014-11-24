@@ -15,11 +15,10 @@ var box5 = document.getElementById("squareFive");
 var box6 = document.getElementById("squareSix");
 var box7 = document.getElementById("squareSeven");
 var box8 = document.getElementById("squareEight");
+var resetButton = document.getElementById("reset");
 var turn = 1;
 // create an undefined array with 9 slots, one for each block.
 var moves = [];
-//presents message upon ending
-var endOfGame = "";
 
 
 if(turn % 2 === 0) {
@@ -64,7 +63,8 @@ if((moves[0] === "X" && moves[1] === "X" && moves[2] === "X")
  		||(moves[0] === "X" && moves[4] === "X" && moves[8] === "X")
  		||(moves[2] === "X" && moves[4] === "X" && moves[6] === "X"))
  		{
- 		endOfGame = confirm("You win, Player One!");
+ 		endOfGame = prompt("You win, Player One!");
+
  		}
  		
  		//check to see if x is a winner - array positions represent 8 winning combos
@@ -78,6 +78,7 @@ if((moves[0] === "X" && moves[1] === "X" && moves[2] === "X")
  		||(moves[2] === "O" && moves[4] === "O" && moves[6] === "O"))
  		{
 		endOfGame = confirm("You win, Player Two!");
+
  		}
 
 
@@ -577,11 +578,16 @@ if((moves[0] === "X" && moves[1] === "X" && moves[2] === "X")
 
 };
 
+
+resetButton.onclick=function() {
+	document.location.reload(true);
+}
+
+
+
+
 };
 
-
-  
-  //check for winning combinations
 
 
 
