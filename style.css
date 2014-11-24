@@ -1,0 +1,95 @@
+body {
+  background:white;
+  text-align: center;
+  font-weight: bold;
+}
+
+body p {
+   font-size: 30px;
+}
+
+.messageBox {
+  font-size: 20px;
+}
+
+gamerGrid {
+  margin: 0 auto;
+  min-width: 376px;
+  max-width: 376px;
+  width: 376px;
+  position: relative;
+  top: 50px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.tile {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  background-size: 100% 100%;
+}
+
+.tileRight{
+  border-right: 6px solid black;
+}
+
+.tileLeft{
+  border-left: 6px solid black;
+}
+
+.tileTop{
+  border-top: 6px solid black;
+}
+
+.tileBottom{
+  border-bottom: 6px solid black;
+}
+
+.currentPlayer{
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 80px;
+  height: 100px;
+}
+
+.resetButton{
+  margin: 0 auto;
+  margin-top:20px;
+  background-color: grey;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.avatar {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  background-size: 100% 100%;
+}
+.playerOne {
+  background-image: url("player1Avatar.png");
+}
+
+.playerTwo{
+  background-image: url("player2Avatar.png");
+}
+
+.arrow {
+  background-image: url("currentArrow.png");
+}
+.arrowLeft{
+  transform:  scaleX(-1);
+}
+
+.arrowRight{
+  transform:  scaleX(1);
+}
+
