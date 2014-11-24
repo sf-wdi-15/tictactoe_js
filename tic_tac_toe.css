@@ -1,0 +1,65 @@
+#gameBoard {
+  background: yellow;
+  height: 400px;
+  width: 400px;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 5px 5px black;
+}
+
+body {
+  background-color: #8a88a8
+}
+
+h1 {
+  font-size: 100px;
+  color: black;
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+.row {
+  height: 100px;
+  width: 90%;
+  border-color: black;
+  position: relative;
+  top: 13%;
+  left: 13%
+}
+
+.square {
+  width: 22%;
+  height:82%;
+  margin: 4px 0px 4px 7px;
+  background: black;
+  text-align: center;
+  font-size: 75px;
+  padding: 5px;
+  color: white;
+  float: left;
+}
+
+.player {
+  width: 125px;
+  height: 20px;
+  background: red;
+  text-align: center;
+  font-family: Helvetica;
+  margin-top: -300px;
+  margin-left: 135px;
+}
+
+.reset {
+  width: 75px;
+  height: 20px;
+  background: red;
+  text-align: center;
+  margin-left: 130px;
+  font-family: Helvetica;
+  position: relative;
+  top: 50px;
+  left: 32px;
+}
+
