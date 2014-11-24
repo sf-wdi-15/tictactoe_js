@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="tictactoe.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+
+  <div class="title" style="height:60px;">
+    <p>TIC TAC TOE</p>
+    <div id="messageBox" class="messageBox"></div>
+  </div>
+
+  <gamerGrid class="flex-center">
+
+    <div class="row">
+      <div id="0" class="tile tileRight tileBottom"></div>
+      <div id="3" class="tile tileRight tileBottom"></div>
+      <div id="6" class="tile tileRight"></div>
+    </div>
+
+    <div class="row">
+      <div id="1" class="tile tileBottom"></div>
+      <div id="4" class="tile tileBottom"></div>
+      <div id="7" class="tile"></div>
+    </div>
+
+    <div class="row">
+      <div id="2" class="tile tileLeft tileBottom"></div>
+      <div id="5" class="tile tileLeft tileBottom"></div>
+      <div id="8" class="tile tileLeft"></div>
+    </div>
+
+    
+    
+  </gamerGrid>
+  
+  <div id="currentPlayer" class="flex-center currentPlayer">
+    <div id="p1Avatar" class="avatar playerOne"></div>
+    <div id="currentArrow" class="avatar arrow"></div>
+    <div id="p2Avatar" class="avatar playerTwo"></div>
+  </div>
+  
+  <div id="resetButton" class="flex-center resetButton">
+     RESET GAME
+  </div>  
+
+  
+
+</body>
+</html>
