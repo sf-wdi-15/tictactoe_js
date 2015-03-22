@@ -228,25 +228,6 @@ window.onload = function() {
   reset_button.onclick = function () {
       location.reload();
       alert("Starting a new game!  Player One is X, Player Two is O");
-      //turn = true; 
-      //row1_col1.innerHTML = "";
-      //row1_col2.innerHTML = "";
-      //row1_col3.innerHTML = "";
-      //row2_col1.innerHTML = "";
-      //row2_col2.innerHTML = "";
-      //row2_col3.innerHTML = "";
-      //row3_col1.innerHTML = "";
-      //row3_col2.innerHTML = "";
-      //row3_col3.innerHTML = "";
-      //row1_col1.style.background = "black";
-      //row1_col2.style.background = "black";
-      //row1_col3.style.background = "black";
-      //row2_col1.style.background = "black";
-      //row2_col2.style.background = "black";
-      //row2_col3.style.background = "black";
-      //row3_col1.style.background = "black";
-      //row3_col2.style.background = "black";
-      //row3_col3.style.background = "black";
    }; 
   
   checkWin = function () {
